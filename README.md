@@ -10,7 +10,7 @@ This is a **Node.js Express app** that demonstrates various authentication metho
 
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/express-auth-demo.git
+git clone https://github.com/Re-Born-Again/Secure-API-Authentication.git
 cd express-auth-demo
 ```
 ### 2️⃣ Install Dependencies
