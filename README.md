@@ -6,6 +6,28 @@ This is a **Node.js Express app** that demonstrates various authentication metho
 - API Key Authentication  
 - Bearer Token Authentication  
 
+## 🛠️ Features
+
+- Password-protected access to API endpoints.
+- Demonstrates authentication using:
+    - No Auth
+    - Basic Auth
+    - API Key
+    - Bearer Token
+- Built using:
+    - Express.js
+    - Axios
+    - EJS (Embedded JavaScript Templates)
+- Handles and displays API responses dynamically.
+
+## 📋 Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v18 or higher)
+- npm (Node Package Manager)
+
+
 ## 🚀 Getting Started
 
 ### 1️⃣ **Clone the Repository**
@@ -31,15 +53,16 @@ Open your browser and visit:
 http://localhost:3000
 ```
 
-## 🛠️ Features
+## 🔐 Usage Instructions
 
-Simple password verification before accessing APIs.
-Uses Axios to make API calls.
-Implements different authentication types:
-- 🔓 No Authentication (/noAuth)
-- 🔑 Basic Authentication (/basicAuth)
-- 🔐 API Key Authentication (/apiKey)
-- 🛡️ Bearer Token Authentication (/bearerToken)
+1. **Access Control:**
+   - On the homepage, enter the password: `ILoveProgramming`
+
+2. **Authentication Methods:**
+   - **No Auth:** Requests public data.
+   - **Basic Auth:** Uses a username and password.
+   - **API Key:** Accesses secured endpoints via an API key.
+   - **Bearer Token:** Authenticates with a token.
 
 ## 📂 Project Structure
 ```
@@ -61,3 +84,7 @@ Secure-API-Authentication/
 | /basicAuth    | GET           | API with Basic Authentication     |
 | /apiKey       | GET           | API with API Key                  |
 | /bearerToken  | GET           | API with Bearer Token             |
+
+## 📘 API Source
+
+This project uses the ```AppBrewery Secrets API``` for demonstration purposes.
