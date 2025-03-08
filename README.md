@@ -11,7 +11,7 @@ This is a **Node.js Express app** that demonstrates various authentication metho
 ### 1️⃣ **Clone the Repository**
 ```bash
 git clone https://github.com/Re-Born-Again/Secure-API-Authentication.git
-cd express-auth-demo
+cd Secure-API-Authentication
 ```
 ### 2️⃣ Install Dependencies
 ```bash
@@ -43,7 +43,7 @@ Implements different authentication types:
 
 ## 📂 Project Structure
 ```
-express-auth-demo/
+Secure-API-Authentication/
 │-- views/
 │   ├── index.ejs
 │   ├── permit.ejs
