@@ -90,7 +90,7 @@ app.get("/basicAuth", async (req, res) => {
 app.get("/apiKey", async (req, res) => {
   try {
     const response = await axios.get(
-      "https://secrets-api.appbrewery.com/random",
+      "https://secrets-api.appbrewery.com/filter",
       {
         params:{
           score: 5,
@@ -104,6 +104,7 @@ app.get("/apiKey", async (req, res) => {
   } catch (error) {
     console.error("Failed to make request:", error.message);
     res.render("permit.ejs", {
+      content: null,
       error: error.message,
     });
   }
@@ -112,7 +113,7 @@ app.get("/apiKey", async (req, res) => {
 app.get("/bearerToken", async (req, res) => {
   try {
     const response = await axios.get(
-      "https://secrets-api.appbrewery.com/random",
+      "https://secrets-api.appbrewery.com/secrets/2",
       {
         headers:{
           Authorization: `Bearer ${theBearerToken}`,
@@ -125,6 +126,7 @@ app.get("/bearerToken", async (req, res) => {
   } catch (error) {
     console.error("Failed to make request:", error.message);
     res.render("permit.ejs", {
+      content: null,
       error: error.message,
     });
   }
